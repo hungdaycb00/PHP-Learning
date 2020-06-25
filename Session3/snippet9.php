@@ -4,11 +4,10 @@ class Greetings{
 
 }
 $closure = function ($whom){
-    echo "$this->word $whom\n";
+    echo "$this->word $whom </br>";
 };
 $obj = new Greetings();
 $closure->call($obj, 'John');
 $closure->call($obj, 'Kevin');
-$year = 12.2;
-echo "Hello".$year;
+
 ?>
