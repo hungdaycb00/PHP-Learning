@@ -1,12 +1,18 @@
 <?php
-$Gpa = 80;
-if($Gpa < 40){
-    echo "Trượt";
+function foo() {
+    yield 1;
+    yield 2;
+    return 42;
 }
-else if ($Gpa > 40 && $Gpa < 80){
-    echo "Khá";
+
+$bar = foo();
+foreach ($bar as $element) {
+    echo $element, "\n";
 }
-else{
-    echo "Giỏi";
-}
+
+var_dump($bar->getReturn());
+
+// 1
+// 2
+// int(42)
 ?>

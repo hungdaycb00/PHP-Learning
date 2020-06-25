@@ -8,7 +8,7 @@ function random_numbers ($k){
     return -1;
 }
 $rns = random_numbers(10);
-foeach($rns as $r) {
+foreach($rns as $r) {
     echo "$r";
     echo '</br>';
 }
