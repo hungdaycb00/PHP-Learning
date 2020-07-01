@@ -1,6 +1,5 @@
 <?php
 $fib1 = 0;
-
 $fib2 = 1;
 $sum = 0;
 echo "The Fibonacci: <br><br>";
@@ -12,5 +11,4 @@ while ($sum <= 15){
     $fib2 = $sum;
 }
 echo  "<br>";
-return 0;
 ?>
