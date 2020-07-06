@@ -3,7 +3,7 @@ require_once 'login.php';
 $conn = new mysqli($hn, $un, $pw, $db);
 if($conn->connect_error) die("Connect to Db Error");
 
-$query = "SELECT * From classicss";
+$query = "SELECT * From classics";
 $result = $conn->query($query);
 if(!$result) die("Query Execute Error");
 $rows = $result->num_rows;
