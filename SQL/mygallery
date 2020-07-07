@@ -7,12 +7,12 @@ imgFullNameGallery longtext,
 orderGallery int(11)
 );
 insert into gallery(titleGallery,descGallery,imgFullNameGallery,orderGallery)
-values ('advanture','bicycle and tree', 'advanture',1);
+values ('advanture','bicycle and tree', 'advanture.jpg',1);
 insert into gallery(titleGallery,descGallery,imgFullNameGallery,orderGallery)
-values ('face','bicycle and tree', 'face',2);
+values ('face','bicycle and tree', 'face.jpg',2);
 insert into gallery(titleGallery,descGallery,imgFullNameGallery,orderGallery)
-values ('flower','bicycle and tree', 'flower',3);
+values ('flower','bicycle and tree', 'flower.jpg',3);
 insert into gallery(titleGallery,descGallery,imgFullNameGallery,orderGallery)
-values ('forest','bicycle and tree', 'forest',4);
+values ('forest','bicycle and tree', 'forest.jpg',4);
 insert into gallery(titleGallery,descGallery,imgFullNameGallery,orderGallery)
-values ('hand','bicycle and tree', 'hand',5);
+values ('hand','bicycle and tree', 'hand.jpg',5);

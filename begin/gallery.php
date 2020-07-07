@@ -9,6 +9,8 @@ require_once 'gallery.php';
 $conn = new mysqli($hn,$un,$pw,$db);
 if($conn->connect_errno) die ("Connect fail!");
 $Conn = mysqli_connect($hn,$un,$pw,$db);
+
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -59,6 +61,8 @@ $Conn = mysqli_connect($hn,$un,$pw,$db);
             <?php
             if (isset($_SESSION['username']))
             {
+
+
                 echo '<div class="gallery-upload">
                     <h2>Up load</h2>
                     <form action="gallery.php" method="post" enctype="multipart/form-data">
@@ -70,6 +74,9 @@ $Conn = mysqli_connect($hn,$un,$pw,$db);
                     </form>
                     </div>';
             }
+//            function get_post($Conn, $var){
+//                return $Conn->real_escape_string($_POST[$var]);
+//            }
             ?>
         </div>
 
