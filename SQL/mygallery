@@ -1,0 +1,18 @@
+create database mygallery;
+create table gallery(
+idGallery int(11) not null primary key AUTO_INCREMENT,
+titleGallery longtext,
+descGallery longtext,
+imgFullNameGallery longtext,
+orderGallery int(11)
+);
+insert into gallery(titleGallery,descGallery,imgFullNameGallery,orderGallery)
+values ('advanture','bicycle and tree', 'advanture.jpg',1);
+insert into gallery(titleGallery,descGallery,imgFullNameGallery,orderGallery)
+values ('face','bicycle and tree', 'face.jpg',2);
+insert into gallery(titleGallery,descGallery,imgFullNameGallery,orderGallery)
+values ('flower','bicycle and tree', 'flower.jpg',3);
+insert into gallery(titleGallery,descGallery,imgFullNameGallery,orderGallery)
+values ('forest','bicycle and tree', 'forest.jpg',4);
+insert into gallery(titleGallery,descGallery,imgFullNameGallery,orderGallery)
+values ('hand','bicycle and tree', 'hand.jpg',5);
