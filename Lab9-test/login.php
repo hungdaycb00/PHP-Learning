@@ -24,8 +24,8 @@ if(isset($_POST['username']) && isset($_POST['password'])){
                 $_SESSION['fullname'] = $r3;
                     echo "Wellcome $row[3]";
                 if (($_POST['remember'] == 'Yes' && isset($_POST['remember']))){
-                    setcookie("username", $username);
-                    setcookie("password", $password);
+                    setcookie("username", $username, time()+3000);
+                    setcookie("password", $password, time()+3000);
                     header("location: homepage.php");
                 }
             }
