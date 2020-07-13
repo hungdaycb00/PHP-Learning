@@ -1,4 +1,5 @@
 <?php
+
 require_once 'conn.php';
 $conn = new mysqli($hn, $un, $pw, $db);
 if($conn->connect_errno) die ("Fail Connect!!!");
@@ -12,11 +13,12 @@ if(isset($_POST['username']) && isset($_POST['password']) && isset($_POST['fulln
     $fullname = get_post($conn, 'fullname');
     $email = get_post($conn, 'email');
     $phone = get_post($conn, 'phone');
-    $query = "insert into user1(username, password, fullname,email,phone) values"."('$username','$password', '$fullname', '$email', '$phone')";
+    $query = "insert into user1(username, password, fullname,email,phone) values"."('$username','$hash', '$fullname', '$email', '$phone')";
 
     $result = $conn->query($query);
     if(!$result) echo "add fail!!!";
     else echo "Success!!!";
+    header("location: homepage.php");
 }
 function get_post($conn, $var){
     return $conn->real_escape_string($_POST[$var]);
