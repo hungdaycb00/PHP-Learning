@@ -1,12 +1,13 @@
 create database register;
-create table user(
-    id int(10) not null primary key auto_increment,
-    username varchar(16),
-    password varchar (8),
-    fullname varchar(32),
-    email varchar(32),
-    phone varchar(11)
-)
-
-insert into user(username, password, fullname,email,phone)
-values('hungmanh', '12345678', 'Nong Phan Manh','hungcb1994@gmail.com', '0123456789');
+create table user5(
+                      id int(10) not null PRIMARY KEY AUTO_INCREMENT,
+                      username varchar(16) not null,
+                      password varchar (100) not null,
+                      fullname varchar(32) not null,
+                      email varchar(32) not null,
+                      phone varchar(11) not null
+)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+ALTER TABLE `user5`
+  ADD PRIMARY KEY (`id`);
+  ALTER TABLE `user5`
+    MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;

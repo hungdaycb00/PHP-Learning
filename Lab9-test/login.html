@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+<form action="login.php" method="post">
+    Username: <br> <input type="text" name="username" > <br><br>
+    Password: <br> <input type="text" name="password" > <br><br>
+    Remember me<input type="checkbox" name="remember" value="Yes"><br>
+    <input type="submit" value="Login">
+</form>
+</body>
+</html>

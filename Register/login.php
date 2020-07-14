@@ -21,15 +21,16 @@ for($i = 0; $i < $rows; $i++) {
         if($username == $r1 && $pass == $r2){
             echo "Welcome! " . $r3;
             break;
-        }else{
+        }else {
             echo "Invalid username/password";
+        }
             echo <<<_end
 <br><br>
 <a href="login.html">Back
 </a>
 _end;
             break;
-        }
+
     }
 }
 
