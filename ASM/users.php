@@ -6,9 +6,10 @@ if(isset($_POST['Admin'])&& isset($_POST['password'])){
     $password = $_POST['password'];
 
     header('location: managerWeb.php');
-    $query = "Select * from users where username = '$username';";
+    $query = "Select * from users where username = '$username' and password = '$password';";
     $result = $conn->query($query);
     $rows = $result->num_rows;
+
     if($rows){
         $_SESSION['username'] = $username;
         $_SESSION['password'] = $password;

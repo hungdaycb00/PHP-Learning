@@ -13,7 +13,11 @@ if(isset($_POST['productName']) && isset($_POST['price']) && isset($_POST['compa
     $nameImage = $_POST['nameImage'];
     $query = "insert into products values ('','$name','$price','$company', '$nameImage'); ";
     $result = $conn->query($query);
+
     if($result) echo "Add product success!!!";
+    else{
+        echo "The product already!!!!";
+    }
 }
 echo <<<end
 <pre>
