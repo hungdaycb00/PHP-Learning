@@ -2,7 +2,7 @@
 require_once 'conn.php';
 session_start();
 echo "Welome Admin " . $_SESSION['username'];
-echo "<br><a href='admin.html'>Logout</a><br><br>";
+echo "<br><a href='admin.php'>Logout</a><br><br>";
 
 
 //add new product
