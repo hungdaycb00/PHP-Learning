@@ -17,6 +17,6 @@ company varchar(32),
 nameImage varchar(32)
 )ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-insert into products values ("", "Television", 9999, "Samsung");
-update products set productName = 'Samsung S9', company = 'Samsung', price = 9000 where productID = 1;
+insert into products values ('', 'Samsung S9', 9999, 'Samsung', 'samsungs9.jpg');
+update products set productName = 'Samsung S9', company = 'Samsung', price = 9000, nameImage='samsungs10.jpg' where productID = 1;
 insert into users values('', 'manhhung','123456','Nong Phan Manh Hung', 'HN');
