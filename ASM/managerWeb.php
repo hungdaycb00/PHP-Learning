@@ -10,7 +10,8 @@ if(isset($_POST['productName']) && isset($_POST['price']) && isset($_POST['compa
     $name = $_POST['productName'];
     $price = $_POST['price'];
     $company = $_POST['company'];
-    $query = "insert into products values ('','$name','$price','$company'); ";
+    $nameImage = $_POST['nameImage'];
+    $query = "insert into products values ('','$name','$price','$company', '$nameImage'); ";
     $result = $conn->query($query);
     if($result) echo "Add product success!!!";
 }
@@ -19,7 +20,8 @@ echo <<<end
 <form action="managerWeb.php" method="post">
 Product Name <input type="text" name="productName"><br>
 Price &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="price">$$$$<br>
-Company &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="company"><br><br>
+Company &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="company"><br>
+nameImage &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="nameImage"><br><br>
 <input type="submit" value="ADD NEW PRODUCT"> | <a href='findProduct.php'><input type='button' value='FIND & UPDATE PRODUCT'></a>
 </form>
 </pre>
@@ -42,6 +44,7 @@ for ($i = 0; $i < $rows; $i++ ){
     $r1 = $row[1];
     $r2 = $row[2];
     $r3 = $row[3];
+    $r4= $row[4];
 
     echo <<<_end
 <pre>
@@ -49,6 +52,7 @@ for ($i = 0; $i < $rows; $i++ ){
 <br>Product Name: $r1;
 <br>Price: $r2;
 <br>Company: $r3;
+<br>nameImage: $r4;
 </pre>
 <form action="managerWeb.php" method="post">
 <input type="hidden" name="delete" value="yes">
