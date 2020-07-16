@@ -31,6 +31,12 @@ if(isset($_POST['fullname']) && isset($_POST['email']) && isset($_POST['username
             padding: 10px;
             font-size: 20px;
         }
+        .submit:hover{
+            background-color: #00bf00;
+        }
+        input{
+            margin-bottom: 10px;
+        }
 
     </style>
 </head>
